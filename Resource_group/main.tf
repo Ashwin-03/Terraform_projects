@@ -5,10 +5,11 @@ terraform {
       version = "~>3.0.2"
     }
   }
+  backend "azurerm" {}
   required_version = ">=1.1.0"
 }
 
-backend "azurerm" {}
+provider "azurerm" {}
 
 resource "azurerm_resource_group" "my-rg"{
   name = var.resource_group_name
