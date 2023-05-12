@@ -3,6 +3,6 @@ variable "location" {
 }
 
 variable "resource_group_name" {
-  default = "mykube_rg1"
+  default = "mykube_rg2"
 }
 
