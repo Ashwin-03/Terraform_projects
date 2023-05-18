@@ -3,7 +3,7 @@ variable "myrg" {
 }
 
 variable "mylocation" {
-  default = "east us 2"
+  default = "west us 2"
 }
 
 variable "myasp-1" {
