@@ -53,7 +53,7 @@ resource "azurerm_network_interface" "nic" {
   }
 }
 
-resource "azurerm_virtual_machine" "vm" {
+resource "azurerm_windows_virtual_machine" "vm" {
   name = var.myvm
   location = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
