@@ -22,3 +22,6 @@ variable "mynic" {
   default = "myvm-nic1"
 }
 
+variable "myvm" {
+  default = "azureterraform"
+}
