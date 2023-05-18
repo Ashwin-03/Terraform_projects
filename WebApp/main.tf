@@ -33,7 +33,7 @@ resource "azurerm_app_service" "mylap" {
   name = var.mylapp
   resource_group_name = var.myrg
   location = var.mylocation
-  service_plan_id = azurerm_app_service_plan.myasp1.id
+  app_ervice_plan_id = azurerm_app_service_plan.myasp1.id
 
   site_config {}
 }
@@ -42,7 +42,7 @@ resource "azurerm_windows_web_app" "mywap" {
   name = var.mywapp
   resource_group_name = var.myrg
   location =  var.mylocation
-  service_plan_id = azurerm_app_service_plan.myasp2.id
+  app_service_plan_id = azurerm_app_service_plan.myasp2.id
 
   site_config {}
 }
