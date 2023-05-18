@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
-      version = "~>3.0.2"
+      version = "~>=3.0.2"
     }
   }
   backend "azurerm" {}
@@ -13,9 +13,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "my-rg"{
-  name = var.resource_group_name
+resource "azurerm_resource_group" "myvm" {
+  name = var.rgname
   location = var.location
 }
-
-

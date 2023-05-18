@@ -1,8 +1,7 @@
+variable "rgname" {
+  default = "my-vms"
+}
+
 variable "location" {
-  default = "East US 2"
+  default = "east us 2"
 }
-
-variable "resource_group_name" {
-  default = "mykube_rg2"
-}
-
