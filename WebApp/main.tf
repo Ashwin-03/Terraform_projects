@@ -14,10 +14,8 @@ resource "azurerm_service_plan" "myasp1" {
   resource_group_name = var.myrg
   location = var.mylocation
 
-  sku {
-    tier = "Standard"
-    size = "S1"
-  }
+  sku_name = "S1"
+  os_type = "Linux"
 }
 
 resource "azurerm_service_plan" "myasp2" {
@@ -25,10 +23,8 @@ resource "azurerm_service_plan" "myasp2" {
   resource_group_name = var.myrg
   location = var.mylocation
   
-  sku {
-    name = "P1v2"
-    os_type = "Windows"
-  }
+  sku_name = "P1v2"
+  os_type = "Windows"
 }
 
 resource "azurerm_app_service" "mylap" {
