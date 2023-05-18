@@ -9,6 +9,10 @@ terraform {
   required_version = ">=1.1.0"
 }
 
+provider "azurerm" {
+  features {}
+}
+
 resource "azurerm_service_plan" "myasp1" {
   name = var.myasp-1
   resource_group_name = var.myrg
