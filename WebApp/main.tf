@@ -27,7 +27,7 @@ resource "azurerm_service_plan" "myasp2" {
   os_type = "Windows"
 }
 
-resource "azurerm_app_service" "mylap" {
+resource "azurerm_linux_web_app" "mylap" {
   name = var.mylapp
   resource_group_name = var.myrg
   location = var.mylocation
