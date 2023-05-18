@@ -31,7 +31,7 @@ resource "azurerm_linux_web_app" "mylap" {
   name = var.mylapp
   resource_group_name = var.myrg
   location = var.mylocation
-  app_service_plan_id = azurerm_service_plan.myasp1.id
+  service_plan_id = azurerm_service_plan.myasp1.id
 
   site_config {}
 }
