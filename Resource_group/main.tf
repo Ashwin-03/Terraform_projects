@@ -13,7 +13,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "myvm" {
+resource "azurerm_resource_group" "myrg" {
   name = var.rgname
   location = var.location
 }
