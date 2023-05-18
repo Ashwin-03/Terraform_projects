@@ -1,9 +1,9 @@
 output "myrg" {
-  value = azurerm_resource_group.rg.name
+  value = var.myrg
 }
 
 output "myloc" {
-  value = azurerm_resource_group.rg.location
+  value = var.mylocation
 }
 
 output "mynic" {
